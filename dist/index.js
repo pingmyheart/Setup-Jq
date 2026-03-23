@@ -33625,7 +33625,7 @@ function main() {
   info(`Downloading jq from: ${downloadUrl}`);
   (async () => {
     try {
-      const filePath = await downloadAndRename("https://example.com/file.pdf");
+      const filePath = await downloadAndRename(downloadUrl);
       info(`File downloaded and renamed to: ${filePath}`);
       console.log("File downloaded to:", filePath);
       const dirPath = path2.dirname(filePath);

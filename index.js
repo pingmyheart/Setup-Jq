@@ -83,7 +83,7 @@ function main() {
 
     (async () => {
         try {
-            const filePath = await downloadAndRename('https://example.com/file.pdf');
+            const filePath = await downloadAndRename(downloadUrl);
             core.info(`File downloaded and renamed to: ${filePath}`)
             console.log('File downloaded to:', filePath);
 
