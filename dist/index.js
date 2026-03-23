@@ -33627,7 +33627,7 @@ function main() {
     try {
       const filePath = await downloadAndRename(downloadUrl);
       info(`File downloaded and renamed to: ${filePath}`);
-      console.log("File downloaded to:", filePath);
+      fs3.chmodSync(filePath, 493);
       const dirPath = path2.dirname(filePath);
       addPath(dirPath);
       console.log("Downloaded executable path:", filePath);

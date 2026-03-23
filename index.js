@@ -85,8 +85,11 @@ function main() {
         try {
             const filePath = await downloadAndRename(downloadUrl);
             core.info(`File downloaded and renamed to: ${filePath}`)
-            console.log('File downloaded to:', filePath);
 
+            // Make jq executable
+            fs.chmodSync(filePath, 0o755);
+
+            // Extract path of jq
             const dirPath = path.dirname(filePath);
 
             // Add the folder to PATH for subsequent steps
