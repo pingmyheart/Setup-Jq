@@ -1,0 +1,10 @@
+name: 'Setup JP'
+description: 'Install specified version of Jq and add it to the PATH.'
+author: 'pingmyheart'
+inputs:
+  jq-version:
+    description: 'Version Spec of the version to use'
+    default: '3.8.2'
+runs:
+  using: 'node24'
+  main: 'lib/setup-maven.js'

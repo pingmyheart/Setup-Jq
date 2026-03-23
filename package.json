@@ -1,0 +1,19 @@
+{
+  "name": "setup-jq",
+  "version": "0.0.1",
+  "description": "Github Action to setup jq",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-pingmyheart:pingmyheart/Setup-Jq.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^3.0.0",
+    "@actions/github": "^9.0.0"
+  }
+}
