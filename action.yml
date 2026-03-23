@@ -5,6 +5,12 @@ inputs:
   jq-version:
     description: 'Version Spec of the version to use'
     default: '3.8.2'
+  platform:
+    description: 'The platform to install Jq for. Supported values are "linux", "windows", and "macos". Default is the current platform of the runner.'
+    default: 'linux'
+  architecture:
+    description: 'The architecture to install Jq for. Supported values are "amd64", "arm64", and "i386". Default is the current architecture of the runner.'
+    default: 'amd64'
 runs:
   using: 'node24'
   main: 'dist/index.js'
